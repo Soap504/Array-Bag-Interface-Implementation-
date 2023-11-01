@@ -1,1 +1,28 @@
+//
+// Name: Arce, Sophia
+// Project: 1
+// Due: 9/25/2023 (9:30)
+// Course: cs-2400-02-F23
+//
+// Description:
+//  Implement the interface BagInterface and the class ArrayBag.
+//  Implement the class JavaKeywords, which uses the previously implemented interface and class:
+//  Read Java keywords from the file javakeywords.txt and store them in a bag. Note that the file path should not be provided as input.
+//  Check all command-line parameters and determine if they are Java keywords using the information stored in the bag.
+//  Demonstrate the testing of all interfaces that are not used in part 2.b. This testing should be hardcoded and not require user input.
+//  the code should not be organized into packages.
+//
 
+
+public interface BagInterface<T>{
+
+    public int getCurrentSize();
+    public boolean isEmpty();
+    public boolean add(T newEntry);
+    public T remove();
+    public boolean remove(T anEntry);
+    public void clear();
+    public int getFrequencyOf(T anEntry);
+    public boolean contains(T anEntry);
+    public T[] toArray();
+}
